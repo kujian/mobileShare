@@ -1,0 +1,15 @@
+function ShareLink(ele,url,title,appkey,img,desc){
+this.ele = ele;
+this.url = url;
+this.title = title;
+this.appkey= appkey;
+this.img = img;
+this.desc = desc;
+}
+ShareLink.prototype = {
+  tsina : 'http://service.weibo.com/share/share.php?url='+this.url}&title={title}&appkey={appkey}&pic={pic}',
+	renren : 'http://widget.renren.com/dialog/share?resourceUrl={resourceUrl}&srcUrl={srcUrl}&title={title}&appkey={appkey}&pic={pic}',
+	tqq : 'http://share.v.t.qq.com/index.php?c=share&a=index&url={url}&title={title}&appkey={appkey}&pic={pic}',
+	tqzone : 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={url}&pics={pic}&title={title}&summary='
+			
+}
